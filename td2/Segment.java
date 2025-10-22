@@ -20,11 +20,11 @@ public class Segment {
     return "Segment : [" + extr1 + ", " + extr2 + "], longueur = " + longueur();
 }
 public class EssaiSegment{
-
+                
 public static void main(String[] args) {
-    Segment s = new Segment(5,8);
+    Segment s = new Segment(6,2);
     System.out.println("longueur :" + s.longueur());
-    System.out.println(s);
+    System.out.println(s.toString());
     
 
 }

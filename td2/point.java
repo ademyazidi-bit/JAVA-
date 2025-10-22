@@ -2,11 +2,11 @@ package td2;
 // EX N1
 // EX N1
 // EX N1
-// EX N1
+// EX N1 
 public class point {
-        private String  nom ;
+        private char  nom ;
         private double abscisse;
-    public point(String nom, double abscisse){
+    public point(char nom, double abscisse){
         this.nom = nom;
         this.abscisse = abscisse;
     }
@@ -20,7 +20,8 @@ public class point {
 
     }
     public static void main(String[] args) {
-        point p = new point("A",5);
+        // public Point () :  constructeur vide par default
+        point p = new point('A' ,5);
         p.affiche();
         p.translate(2);
         p.affiche();
