@@ -1,8 +1,11 @@
 package td3;
 
 import java.awt.Color;
-
-// Classe Point2d (first, as in your original)
+// EX1
+// EX1
+// EX1
+// EX1
+// EX1
 class Point2d {
     double x;
     double y;
@@ -18,7 +21,6 @@ class Point2d {
     }
 }
 
-// Classe Cercle (second)
 class Cercle {
     Point2d centre;
     double rayon;
@@ -43,7 +45,6 @@ class Cercle {
 
 }
 
-// Classe TestCercle (third)
 public class TestCercle {
     public static void main(String[] args) {
         Cercle c1 = new Cercle();
