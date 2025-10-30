@@ -14,7 +14,7 @@ public class ex4Personne {
         this.conjoint = null;
     }    
     public String afficherInfos(){
-        return ("M/Me."+prenom+" "+nom+" est ne en " + anneNaiss + ", il/elle est " + etatcivil );
+        return ("M/Me."+ prenom +" "+ nom +" est ne en " + anneNaiss + ", il/elle est " + etatcivil );
     }
     public int age(int anneNaiss){
         return 2025 - anneNaiss;
@@ -25,7 +25,7 @@ public class ex4Personne {
             p.conjoint = this;
             this.etatcivil = "marié(e)";
             p.etatcivil = "marié(e)";   
-            System.out.println(this.prenom+ "  est maintenant marié(e) avec " + p.prenom + ".");
+            System.out.println(this.prenom+ "  est maintenant marié(e) avec  " + p.prenom + ".");
             System.out.println(p.prenom+ " est maintenant marié(e) avec " +this.prenom);}
             else{
                 System.err.println("IMPOSSIBLE !");
@@ -39,7 +39,7 @@ public class ex4Personne {
 
      class  TestPersonne {
         public static void main(String[] args) {
-            ex4Personne p1 = new ex4Personne("Adem","Yazidi","celebataire",2005);
+            ex4Personne p1 = new ex4Personne("Yazidi","Adem","celebataire",2005);
             ex4Personne p2 = new ex4Personne("anonyme ","marmar","comlexe",1940);
             ex4Personne p3 = new ex4Personne("sama","picaso","Amoureux",2010 );
             System.out.println("Info personne 1  "+p1.afficherInfos());

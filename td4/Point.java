@@ -25,20 +25,23 @@ public class Point {
         return y;
     }}
  class PointNom extends Point{
-    char nom;
+    private char nom;
     public PointNom(int x ,int y, char nom){
         super(x, y);
         this.nom = nom;
     }
     public void affCoordNom(){
-        System.out.println(" X : " + getx() +" Y : " + gety()+ " Nom : " + nom);
+        //System.out.println  (" X : " + getx() +" Y : " + gety()+ " Nom : " + nom);//
+        super.affCoor();
+        System.out.println("Nom : " + this.nom) ;
     }
  
 
 
 public static void main(String[] args) {
-    PointNom p = new PointNom(4, 7, 'd');
-    p.affCoordNom();
+    Point p = new Point(4, 7);
+    PointNom pn = new PointNom(4, 7, 'd');
+    pn.affCoordNom();
 }
  }
 

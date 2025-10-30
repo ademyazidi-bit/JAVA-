@@ -10,11 +10,14 @@ import td2.point;
 public class Compte {
     private int solde;
     private String titulaire;
+    public static int nbr;
     public Compte(){  
-        solde = 0;   
+        solde = 0;  
+        nbr ++; 
     }
     public void ouvrirCompte(String nom){
         titulaire = nom;
+        
     }
     public void deposerArgent(int somme ){
         if (somme >0 ){
@@ -36,25 +39,34 @@ public class Compte {
     public void afficherCompte(){
         System.out.println("Nom Titulaire de compte : " + titulaire+ " ; Solde "+ solde);
     }
+    public static void afficherNbr(){
+        System.out.println("Nbr COmptes = " + nbr);
+    }
     public class  TestCompte {
         public static void main(String[] args) {
             Compte c1 = new Compte();
             Compte c2 = new Compte();
             Compte c3 = new Compte();
+            Compte c4 = new Compte();
             c1.ouvrirCompte("Adem");
             c2.ouvrirCompte("7assen");
             c3.ouvrirCompte("7amouda");
+            c4.ouvrirCompte("l7aj");
             c1.deposerArgent(200);
             c2.deposerArgent(300);
             c3.deposerArgent(150);
+            c4.deposerArgent(720);
             c1.transfererArgent(150,c2);
             c2.transfererArgent(100,c1);
             c1.getSolde();
             c2.getSolde();
             c3.getSolde();
+
             c1.afficherCompte();
             c2.afficherCompte();
             c3.afficherCompte();
+            c4.afficherCompte();
+            Compte.afficherNbr();
 
 
         }

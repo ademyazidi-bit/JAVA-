@@ -24,23 +24,23 @@ public class Point1 {
     public int getY(){
         return y;
     }
-    public void affich(){
-        System.out.println("X = "+ getX()+" Y =  " + getY());
-    }
+    
 
 }
  class PointA extends Point1{
-    public PointA(){
+    public void affiche(){
+        System.out.println("X = "+ super.getX()+" Y =  " +super.getY());
+    }     
         
-        
-    }
+    
     public static void main(String[] args) {
         Point1 p = new Point1();
         p.initialise(5, 4);
         PointA pa = new PointA();
         pa.initialise(7, 3);
-        p.affich();
-        pa.affich();
+        pa.affiche();
+        pa.deplace(2, 5);
+        pa.affiche();
         }
     }
 
